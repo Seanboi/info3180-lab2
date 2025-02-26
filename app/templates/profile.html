@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+{% block main %}
+<body>
+    <div class="profile-card">
+        <img src="{{ url_for('static', filename='download.jpeg') }}" alt="Profile Picture">
+        <h2>Sean Spence</h2>
+        <p>@sspence</p>
+        <p>Kingston, Jamaica</p>
+        <p>Joined {{date_joined}} </p>
+        <p>I am a smart and talented young Man who loves video games and anime. Contact me if you'd like to talk about these more.</p>
+        <div class="stats">
+            <div>
+                <strong>7</strong>
+                <p>Posts</p>
+            </div>
+            <div>
+                <strong>100</strong>
+                <p>Following</p>
+            </div>
+            <div>
+                <strong>250</strong>
+                <p>Followers</p>
+            </div>
+        </div>
+        <a href="#" class="follow-btn">Follow</a>
+    </div>
+</body>
+{% endblock %}
+</html>
